@@ -1,0 +1,26 @@
+title: IN[SCI]TE
+Name: IN[SCI]TE
+email: reaal@inscite.co
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://inscite.co" # the base hostname & protocol for your site
+
+# Navigation
+nav:
+  - name:           "about"
+    href:           "/about"
+  - name:           "committee"
+    href:           "/committee"
+  - name:           "sponsor"
+    href:           "/sponsor"
+  - name:           "talk"
+    href:           "/talk"
+  - name:           "attend"
+    href:           "/attend"
+  - name:           "contact"
+    href:           "/contact"
+        
+
+include: ['_pages']
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,39 @@
+<script>
+	function openmobilemenu(){
+		document.getElementById('innermobilemenu').classList.toggle('show');
+		document.getElementById('innermobilemenuopener').classList.toggle('show');
+	}
+</script>
+
+{% capture socialButtons %}
+	<div class="social">
+		<div class="fb"><a href="http://facebook.com/insciteco"></a></div>
+		<div class="tw"><a href="http://twitter.com/insciteco"></a></div>
+		<div class="in"><a href="https://www.linkedin.com/company/10300543"></a></div>
+	</div>
+{% endcapture %}
+
+{% if page.url == "/" %}
+{% assign isHomePage = true %}
+{% endif %}
+
+<div class="menu">
+	<a class="menuhome {% if isHomePage == true %}selected{% endif %}" href="/">&nbsp;</a>
+	{% for nav in site.nav %}
+	<a href="{{ nav.href }}" class="menubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
+	{% endfor %}
+	{{ socialButtons }}
+</div>
+
+<div class="mobilemenu">
+	<a class="menuhome {% if isHomePage == true %}selected{% endif %}"  href="/">&nbsp;</a>
+	<a id="innermobilemenuopener" href="javascript:openmobilemenu();">&nbsp;</a>
+	<div id="innermobilemenu">
+    	{% for nav in site.nav %}
+		<a href="{{ nav.href }}" class="mobilemenubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
+    	{% endfor %}
+		{{ socialButtons }}
+	</div>
+</div>
+
+
