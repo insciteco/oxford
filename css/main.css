@@ -1,3 +1,5 @@
+---
+---
 html{
   -webkit-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%;
@@ -36,7 +38,7 @@ html{
 }
 .menuhome,#innermobilemenuopener{
   display: inline-block;
-  background-image: url("/img/menuhome2.png");
+  background-image: url("{{ site.baseurl }}/img/menuhome2.png");
   background-repeat: no-repeat;
 background-size:auto 60px;
   height:60px;
@@ -47,10 +49,10 @@ line-height: 60px;
 }
 .menuhome:hover{
 text-decoration: none;
-background-image: url("/img/menuhomehover.png");
+background-image: url("{{ site.baseurl }}/img/menuhomehover.png");
 }
 .menuhome:active,.menuhome.selected{
-background-image: url("/img/menuhomeactive.png");
+background-image: url("{{ site.baseurl }}/img/menuhomeactive.png");
 }
 .menubutton{
   color: #444;
@@ -86,10 +88,10 @@ background-image: -webkit-linear-gradient(left, transparent 20px,#ddd 20px, #ddd
 
 }
 .menubutton:hover::before{
-  background: url("/img/btnleftedgehover.png");  background-repeat: no-repeat; background-size:auto 60px;
+  background: url("{{ site.baseurl }}/img/btnleftedgehover.png");  background-repeat: no-repeat; background-size:auto 60px;
 }
 .menubutton:hover::after{
-  background: url("/img/btnrightedgehover.png");  background-repeat: no-repeat; background-size:auto 60px;
+  background: url("{{ site.baseurl }}/img/btnrightedgehover.png");  background-repeat: no-repeat; background-size:auto 60px;
 }
 .menubutton:active,.menubutton.selected{
   color: #fff;
@@ -99,10 +101,10 @@ background-image: -moz-linear-gradient(left, transparent 20px,#26abe2 20px, #26a
 background-image: -webkit-linear-gradient(left, transparent 20px,#26abe2 20px, #26abe2 calc(100% - 20px),transparent calc(100% - 20px),transparent 100%);
 }
 .menubutton:active::before,.menubutton.selected::before{
-  background: url("/img/btnleftedgeactive.png");  background-repeat: no-repeat; background-size:auto 60px;
+  background: url("{{ site.baseurl }}/img/btnleftedgeactive.png");  background-repeat: no-repeat; background-size:auto 60px;
 }
 .menubutton:active::after,.menubutton.selected::after{
-  background: url("/img/btnrightedgeactive.png");  background-repeat: no-repeat; background-size:auto 60px;
+  background: url("{{ site.baseurl }}/img/btnrightedgeactive.png");  background-repeat: no-repeat; background-size:auto 60px;
 }
 .social{
     display: inline-block;
@@ -120,7 +122,7 @@ line-height: 60px;
   vertical-align: middle;
     cursor: pointer;
     display: inline-block;
-    background-image: url("/img/fb.png");
+    background-image: url("{{ site.baseurl }}/img/fb.png");
     background-repeat: no-repeat;
   background-size:auto 30px;
   background-position: center;
@@ -129,19 +131,19 @@ line-height: 60px;
 }
 .fb a:hover,.tw a:hover,.in a:hover{
   text-decoration: none;
-  background-image: url("/img/fbhover.png");
+  background-image: url("{{ site.baseurl }}/img/fbhover.png");
 }
 .tw a{
-background-image: url("/img/tw.png");
+background-image: url("{{ site.baseurl }}/img/tw.png");
 }
 .tw a:hover{
-background-image: url("/img/twhover.png");
+background-image: url("{{ site.baseurl }}/img/twhover.png");
 }
 .in a{
-background-image: url("/img/in.png");
+background-image: url("{{ site.baseurl }}/img/in.png");
 }
 .in a:hover{
-background-image: url("/img/inhover.png");
+background-image: url("{{ site.baseurl }}/img/inhover.png");
 }
 
 #innermobilemenu{
@@ -161,14 +163,14 @@ padding-left: 15px;
 #innermobilemenuopener{
   text-decoration: none;
   float:right;
-  background-image: url("/img/mobilemenu.png");
+  background-image: url("{{ site.baseurl }}/img/mobilemenu.png");
 }
 #innermobilemenuopener:hover{
   text-decoration: none;
 }
 #innermobilemenuopener.show{
   text-decoration: none;
-  background-image: url("/img/mobilemenutap.png");
+  background-image: url("{{ site.baseurl }}/img/mobilemenutap.png");
 }
 #innermobilemenu .social{
   text-align: center;
@@ -229,7 +231,7 @@ h2{
 }
 .hexagon{
 display: block;
-background-image: url("/img/hexagon.png");
+background-image: url("{{ site.baseurl }}/img/hexagon.png");
 background-repeat: no-repeat;
 background-size: 30px 30px;
 background-position: center;
@@ -297,13 +299,13 @@ width: calc(100% - 250px);
 .container-fluid{
   padding-left: 50px;
     padding-right: 50px;
-  background-image:url("/img/watermark.png");
+  background-image:url("{{ site.baseurl }}/img/watermark.png");
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: 105% 100%;
 }
 .container{
-background-image:url("/img/watermark.png");
+background-image:url("{{ site.baseurl }}/img/watermark.png");
 background-repeat: no-repeat;
 background-size: 400px;
 background-position: 105% 100%;

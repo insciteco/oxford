@@ -18,19 +18,19 @@
 {% endif %}
 
 <div class="menu">
-	<a class="menuhome {% if isHomePage == true %}selected{% endif %}" href="/">&nbsp;</a>
+	<a class="menuhome {% if isHomePage == true %}selected{% endif %}" href="{{ site.baseurl }}/">&nbsp;</a>
 	{% for nav in site.nav %}
-	<a href="{{ nav.href }}" class="menubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
+	<a href="{{ site.baseurl }}{{ nav.href }}" class="menubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
 	{% endfor %}
 	{{ socialButtons }}
 </div>
 
 <div class="mobilemenu">
-	<a class="menuhome {% if isHomePage == true %}selected{% endif %}"  href="/">&nbsp;</a>
+	<a class="menuhome {% if isHomePage == true %}selected{% endif %}"  href="{{ site.baseurl }}/">&nbsp;</a>
 	<a id="innermobilemenuopener" href="javascript:openmobilemenu();">&nbsp;</a>
 	<div id="innermobilemenu">
     	{% for nav in site.nav %}
-		<a href="{{ nav.href }}" class="mobilemenubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
+		<a href="{{ site.baseurl }}{{ nav.href }}" class="mobilemenubutton {% if page.url contains nav.href %}selected{% endif %}">{{ nav.name }}</a>
     	{% endfor %}
 		{{ socialButtons }}
 	</div>
