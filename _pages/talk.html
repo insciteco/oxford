@@ -1,0 +1,84 @@
+---
+permalink: /talk/
+title: Talk
+layout: inscite
+---
+
+
+<h1>Talk</h1>
+
+{% assign phase=1 %}
+
+
+
+
+{% if phase==1 %}
+<div class="emphasize">
+        <h2>Talk submissions will open later on in MT</h2><br>
+        Email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a> if you have any questions.
+      </div>
+{% endif %}
+
+
+
+
+
+{% if phase==2 %}
+<p>
+  <h4>Have you done a project, internship, or piece of independent research in science?
+    <br>Could you talk for 20 minutes to an undergraduate audience?
+    <br>Sign up below with the topic of your talk, and we'll be in touch!</h4>
+<br>
+  All speakers will be given a presentation skills workshop by the careers service.
+<br><br>
+<b>The ideal talk will be:</b>
+<br><br>
+<ol><li><b>Scientific:</b> Your talk should be about some interesting area of science or scientific research.</li>
+<li><b>Aimed at...</b> undergraduates who don't necessarily study a closely related subject. It should be scientific in nature, but not too technical!</li>
+<li><b>Personal:</b> What have you done with science? Your talk could be about an internship or project you've done, or an area of science that you have researched independently.</li>
+<li><b>Inspiring:</b> There may be some technical detail, or some results, but the idea is not to lecture people on science. A great talk will inspire people to explore this area in more depth and expand their scientific horizons.</li>
+<li><b>Interdisciplinary:</b> The aim is to blur the boundaries between sciences. The perfect talk would combine different areas of science, or try to relate one area to another.</li></ol>
+</p>
+
+
+
+<hr>
+<form action="index.php" method="post" role='form'>
+<h4>Information about you:</h4>
+<div class="form-group"><input type="text" class="form-control" placeholder="Name" name="name"></div>
+<div class="form-group"><input type="text" class="form-control" placeholder="Email" name="email"></div>
+<div class="form-group"><input type="text" class="form-control" placeholder="Subject" name="subject"></div>
+<div class="form-group"><input type="text" class="form-control" placeholder="Year" name="year"></div>
+<div class="form-group"><input type="text" class="form-control" placeholder="College" name="college"></div>
+<h4>Information about your talk:</h4>
+<div class="form-group"><input type="text" class="form-control" name="topics" placeholder="Topics you'd like to discuss"></div>
+<div class="form-group"><textarea rows="5" class="form-control" name="summary" placeholder="Summary/description of the talk"></textarea></div>
+  <input class="btn btn-success" type="submit" text="SUBMIT" name="submit">
+</form>
+
+{% endif %}
+
+
+
+
+
+{% if phase==3 %}
+<div class="emphasize">
+        <h2>Sorry, we are no longer accepting student speakers.</h2><br>
+        If you've already signed up email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a> if you have any questions.
+      </div>
+{% endif %}
+
+
+
+{% if phase==1 or phase==3 %}
+<p>
+<h2>Talk guidelines</h2><br>
+      <b>The ideal talk should be:</b>
+      <ol><li><b>Scientific:</b> Your talk should be about some interesting area of science or scientific research.</li>
+      <li><b>Aimed at...</b> undergraduates who don't necessarily study a closely related subject. It should be scientific in nature, but not too technical!</li>
+      <li><b>Personal:</b> What have you done with science? Your talk could be about an internship or project you've done, or an area of science that you have researched independently.</li>
+      <li><b>Inspiring:</b> There may be some technical detail, or some results, but the idea is not to lecture people on science. A great talk will inspire people to explore this area in more depth and expand their scientific horizons.</li>
+      <li><b>Interdisciplinary:</b> The aim is to blur the boundaries between sciences. The perfect talk would combine different areas of science, or try to relate one area to another.</li></ol>
+	  </p>
+{% endif %}
