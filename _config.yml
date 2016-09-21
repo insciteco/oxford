@@ -3,19 +3,22 @@ Name: IN[SCI]TE
 email: reaal@inscite.co
 baseurl: "/oxford" # the subpath of your site, e.g. /blog
 url: "http://inscite.co" # the base hostname & protocol for your site
+phase: 1
 
 # Navigation
 nav:
-  - name:           "about"
-    href:           "/about"
+#  - name:           "about"
+#    href:           "/about"
   - name:           "committee"
     href:           "/committee"
   - name:           "sponsor"
     href:           "/sponsor"
   - name:           "talk"
     href:           "/talk"
-  - name:           "attend"
-    href:           "/attend"
+  - name:			"attend"
+    href:			"/attend"
+  - name:           "2016"
+    href:           "/2016"
   - name:           "contact"
     href:           "/contact"
         
