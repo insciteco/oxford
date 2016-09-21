@@ -1,5 +1,5 @@
 title: IN[SCI]TE
-Name: IN[SCI]TE
+name: IN[SCI]TE
 email: reaal@inscite.co
 baseurl: "/oxford" # the subpath of your site, e.g. /blog
 url: "http://inscite.co" # the base hostname & protocol for your site
