@@ -22,7 +22,10 @@
   <body>
   {% include nav.html %}
     <div class="container-fluid">
-    {{ content }}
+	  {% if page.title != IN[SCI]TE %}
+	  <h1>{{page.title}}</h1>
+	  {% endif %}
+      {{ content }}
       <div class="hexagon"></div>
       <div class="footer">
         <p>&copy; IN[SCI]TE 2016</p>
