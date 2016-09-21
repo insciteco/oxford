@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Interdisciplinary Science, Technology and Engineering Conference in Oxford. For undergrads, by undergrads.">
-  <title>{% if page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+  <title>{% if page.title != 'index' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
   <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
@@ -17,12 +17,16 @@
     ga('create', 'UA-71024942-1', 'auto');
     ga('send', 'pageview');
   </script>
-  {% include icon.html %}
+  {% if page.title == 'index' %}
+  	{% include indexicon.html %}
+  {% else %}
+  	{% include icon.html %}
+  {% endif %}
   </head>
   <body>
   {% include nav.html %}
     <div class="container-fluid">
-	  {% if page.title != IN[SCI]TE %}
+	  {% if page.title != 'index' %}
 	  <h1>{{page.title}}</h1>
 	  {% endif %}
       {{ content }}
