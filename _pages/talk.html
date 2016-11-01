@@ -5,29 +5,38 @@ layout: inscite
 ---
 
 <div class="emphasize">
+
   {% if site.phase == 1 %}
+  
   <h2>Applications for talks will open in Michaelmas term.</h2><br>
 	In 2016 we had an amazing collection of 30 student talks from artificial intelligence to astrophysics to biomimicry. If you have any questions please don't hesitate to email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a>.
+  
   {% elsif site.phase == 2 %}
+  
   <h2>
     Have you done a project, internship, or piece of independent research in science?
     <br>Could you talk for 20 minutes to an undergraduate audience?
     <br>Sign up below with the topic of your talk, and we'll be in touch!
   </h2>
+  
   {% elsif site.phase == 3 %}
+  
   <h2>Sorry, we are no longer accepting student speakers.</h2><br>
     If you've already signed up email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a> if you have any questions.
+    
   {% endif %}
 
 </div>
+
 	  
 <p>
   <br>All speakers will be given a presentation skills workshop by the careers service.<br><br>
 </p>
 <p>
   {% if site.phase != 2 %}
-  <h2>Talk guidelines</h2><br>
+    <h2>Talk guidelines</h2><br>
   {% endif %}
+  
   <b>The ideal talk should be:</b><br>
   <ol>
     <li>
@@ -48,7 +57,9 @@ layout: inscite
   </ol>
 </p>
 
+
 {% if site.phase==2 %}
+
 <hr>
 <form action="http://formspree.io/speakers@inscite.co" method="post" role='form'>
   <h4>Information about you:</h4>
@@ -80,4 +91,5 @@ layout: inscite
   <input type="hidden" name="_subject" value="New speaker submission">
   <input type="hidden" name="_format" value="plain">
 </form>	  
+
 {% endif %}
