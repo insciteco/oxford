@@ -5,50 +5,91 @@ layout: inscite
 ---
 
 <div class="emphasize">
-  {% if site.phase==1 %}
+
+  {% if site.phase == 1 %}
+  
   <h2>Applications for talks will open in Michaelmas term.</h2><br>
 	In 2016 we had an amazing collection of 30 student talks from artificial intelligence to astrophysics to biomimicry. If you have any questions please don't hesitate to email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a>.
-  {% elsif site.phase==2 %}
-  <h2></h2>
-  {% elsif site.phase==3 %}
+  
+  {% elsif site.phase == 2 %}
+  
+  <h2>
+    Have you done a project, internship, or piece of independent research in science?
+    <br>Could you talk for 20 minutes to an undergraduate audience?
+    <br>Sign up below with the topic of your talk, and we'll be in touch!
+  </h2>
+  
+  {% elsif site.phase == 3 %}
+  
   <h2>Sorry, we are no longer accepting student speakers.</h2><br>
     If you've already signed up email us at <a href="mailto:speakers@inscite.co">speakers@inscite.co</a> if you have any questions.
+    
   {% endif %}
+
 </div>
+
 	  
-{% if site.phase==2 %}
 <p>
-  <h4>Have you done a project, internship, or piece of independent research in science?
-    <br>Could you talk for 20 minutes to an undergraduate audience?
-    <br>Sign up below with the topic of your talk, and we'll be in touch!</h4>
-<br>
-  All speakers will be given a presentation skills workshop by the careers service.
-<br><br>
-{% else %}
+  <br>All speakers will be given a presentation skills workshop by the careers service.<br><br>
+</p>
 <p>
-  <h2>Talk guidelines</h2><br>
-{% endif %}
-<b>The ideal talk should be:</b>
-<br><br>
-<ol><li><b>Scientific:</b> Your talk should be about some interesting area of science or scientific research.</li>
-<li><b>Aimed at...</b> undergraduates who don't necessarily study a closely related subject. It should be scientific in nature, but not too technical!</li>
-<li><b>Personal:</b> What have you done with science? Your talk could be about an internship or project you've done, or an area of science that you have researched independently.</li>
-<li><b>Inspiring:</b> There may be some technical detail, or some results, but the idea is not to lecture people on science. A great talk will inspire people to explore this area in more depth and expand their scientific horizons.</li>
-<li><b>Interdisciplinary:</b> The aim is to blur the boundaries between sciences. The perfect talk would combine different areas of science, or try to relate one area to another.</li></ol>
+  {% if site.phase != 2 %}
+    <h2>Talk guidelines</h2><br>
+  {% endif %}
+  
+  <b>The ideal talk should be:</b><br>
+  <ol>
+    <li>
+      <b>Scientific:</b> Your talk should be about some interesting area of science or scientific research.
+    </li>
+    <li>
+      <b>Aimed at...</b> undergraduates who don't necessarily study a closely related subject. It should be scientific in nature, but not too technical!
+    </li>
+    <li>
+      <b>Personal:</b> What have you done with science? Your talk could be about an internship or project you've done, or an area of science that you have researched independently.
+    </li>
+    <li>
+      <b>Inspiring:</b> There may be some technical detail, or some results, but the idea is not to lecture people on science. A great talk will inspire people to explore this area in more depth and expand their scientific horizons.
+    </li>
+    <li>
+      <b>Interdisciplinary:</b> The aim is to blur the boundaries between sciences. The perfect talk would combine different areas of science, or try to relate one area to another.
+    </li>
+  </ol>
 </p>
 
+
 {% if site.phase==2 %}
+
 <hr>
-<form action="http://formspree.io?" method="post" role='form'>
-<h4>Information about you:</h4>
-<div class="form-group"><input type="text" class="form-control" placeholder="Name" name="name"></div>
-<div class="form-group"><input type="text" class="form-control" placeholder="Email" name="email"></div>
-<div class="form-group"><input type="text" class="form-control" placeholder="Subject" name="subject"></div>
-<div class="form-group"><input type="text" class="form-control" placeholder="Year" name="year"></div>
-<div class="form-group"><input type="text" class="form-control" placeholder="College" name="college"></div>
-<h4>Information about your talk:</h4>
-<div class="form-group"><input type="text" class="form-control" name="topics" placeholder="Topics you'd like to discuss"></div>
-<div class="form-group"><textarea rows="5" class="form-control" name="summary" placeholder="Summary/description of the talk"></textarea></div>
-  <input class="btn btn-success" type="submit" text="SUBMIT" name="submit">
+<form action="http://formspree.io/speakers@inscite.co" method="post" role='form'>
+  <h4>Information about you:</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Name" name="name">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Email" name="email">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Subject" name="subject">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Year" name="year">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="College" name="college">
+  </div>
+  <h4>Information about your talk:</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" name="topics" placeholder="Topics you'd like to discuss">
+  </div>
+  <div class="form-group">
+    <textarea rows="5" class="form-control" name="summary" placeholder="Summary/description of the talk"></textarea>
+  </div>
+  <input class="btn btn-success" type="submit" text="SUBMIT">
+  <!-- input type="hidden" name="_next" value="" -->
+  <input type="hidden" name="_cc" value="it@inscite.co">
+  <input type="hidden" name="_subject" value="New speaker submission">
+  <input type="hidden" name="_format" value="plain">
 </form>	  
+
 {% endif %}

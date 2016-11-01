@@ -3,6 +3,7 @@ GEM
   specs:
     colorator (1.1.0)
     ffi (1.9.14)
+    ffi (1.9.14-x64-mingw32)
     ffi (1.9.14-x86-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
@@ -27,7 +28,7 @@ GEM
     mercenary (0.3.6)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rb-fsevent (0.9.7)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.11.1)
@@ -36,13 +37,14 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
   x86-mingw32
 
 DEPENDENCIES
   jekyll (= 3.2.1)
 
 RUBY VERSION
-   ruby 2.2.5p319
+   ruby 2.2.4p230
 
 BUNDLED WITH
-   1.13.1
+   1.13.6
