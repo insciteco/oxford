@@ -50,7 +50,7 @@ layout: inscite
 
 {% if site.phase==2 %}
 <hr>
-<form action="http://formspree.io?" method="post" role='form'>
+<form action="http://formspree.io/speakers@inscite.co" method="post" role='form'>
   <h4>Information about you:</h4>
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Name" name="name">
@@ -74,6 +74,10 @@ layout: inscite
   <div class="form-group">
     <textarea rows="5" class="form-control" name="summary" placeholder="Summary/description of the talk"></textarea>
   </div>
-  <input class="btn btn-success" type="submit" text="SUBMIT" name="submit">
+  <input class="btn btn-success" type="submit" text="SUBMIT">
+  <!-- input type="hidden" name="_next" value="" -->
+  <input type="hidden" name="_cc" value="it@inscite.co">
+  <input type="hidden" name="_subject" value="New speaker submission">
+  <input type="hidden" name="_format" value="plain">
 </form>	  
 {% endif %}
