@@ -4,12 +4,18 @@ title: Attend
 layout: inscite
 ---
 
-{% if site.phase < 3 %}
-
 <div class="emphasize">
+  {% if site.phase < 3 %}
   <h2>
     Please follow us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates on ticket release and all things IN[SCI]TE. Tickets will be released for purchase in Hilary term.
   </h2>
+    
+  {% elsif site.phase == 3 %}
+  <h2>
+    Tickets will be on sale very soon! Follow us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates on ticket release and all things IN[SCI]TE.
+  </h2>
+  
+  {% endif %}
+  
 </div>
 
-{% endif %}

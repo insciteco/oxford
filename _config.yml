@@ -3,7 +3,7 @@ name: IN[SCI]TE
 email: reaal@inscite.co
 baseurl: "/oxford" # the subpath of your site, e.g. /blog
 url: "http://inscite.co" # the base hostname & protocol for your site
-phase: 2 # the phase of the current year's event
+phase: 3 # the phase of the current year's event
 
 # Navigation
 nav:
