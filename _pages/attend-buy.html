@@ -1,0 +1,44 @@
+---
+permalink: /attend/buy/
+title: Attend
+layout: inscite
+---
+
+<div class="emphasize">
+  <h2>Fill in the form below to sign up to attend IN[SCI]TE 2017.</h2>
+</div>
+	  
+    
+{% if site.phase==4 %}
+
+<hr>
+<form action="http://formspree.io/tickets@ox.inscite.co" method="post" role='form'>
+  <h4>Information about you:</h4>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="First name" name="first_name">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Last name" name="surname">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" placeholder="Oxford email" name="_replyto">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" placeholder="Confirm email" name="email_confirm">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Subject" name="subject">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Year" name="year">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="College" name="college">
+  </div>
+  <input class="btn btn-success" type="submit" text="SUBMIT">
+  <input type="hidden" name="_next" value="{{ site.baseurl }}/attend/buy/thanks">
+  <input type="hidden" name="_subject" value="New attendee">
+  <input type="hidden" name="_format" value="plain">
+</form>	  
+
+{% endif %}
