@@ -23,13 +23,6 @@ title: index
     Tickets for 2017 will go on sale in Hilary term, like us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates.
   </h2>
   
-  {% elsif site.phase == 0 %}
-  
-    <h3><b>80% off tickets!</b></h3>
-    <h4 style="display:inline;"> Ticket prices have just been reduced from &pound;25 to </h4><h3 style="display:inline;">&pound;5!</h3>
-    <br><br>
-    <a class="btn btn-success" href="{{ site.baseurl }}/attend/buy">Buy now</a>
-    
   {% elsif site.phase == 2 %}
   
     <h2>We are now accepting applications for speakers!</h2><br>
@@ -40,6 +33,11 @@ title: index
   
     <h2>Tickets for the 2017 conference will go on sale on 9th February!</h2>
     
+  {% elsif site.phase == 4 %}
+  
+  <h2>Ticket sales are now open, £5 for both days!</h2>
+  <a class="btn btn-primary" href="/oxford/attend/buy/">Buy now</a>
+  
   {% endif %}
   
 </div>
@@ -76,15 +74,3 @@ title: index
   </div>
 </div>
 
-<!--
-<div class="jumbotron">
-  <p class="lead">
-  {% if site.phase==1 %}
-    <h3>Follow us on <a href="https://m.facebook.com/insciteco/">Facebook</a> for information on ticket release in Hilary term.<h3>
-  {% elsif site.phase==2 %}
-    <h3>Ticket sales are now open!<h3>
-    <a class="btn btn-success" href="/attend/buy/">Buy now</a>
-  {% endif %}
-  </p>
-</div>
--->

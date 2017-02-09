@@ -74,7 +74,7 @@ layout: inscite
     <input type="text" class="form-control" placeholder="Name" name="name">
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Email" name="email">
+    <input type="email" class="form-control" placeholder="Email" name="email">
   </div>
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Subject" name="subject">
@@ -93,7 +93,7 @@ layout: inscite
     <textarea rows="5" class="form-control" name="summary" placeholder="Summary/description of the talk"></textarea>
   </div>
   <input class="btn btn-success" type="submit" text="SUBMIT">
-  <input type="hidden" name="_next" value="http://inscite.co/oxford/talk/thanks">
+  <input type="hidden" name="_next" value="{{ site.baseurl }}/oxford/talk/thanks">
   <!--input type="hidden" name="_cc" value="reaal@reaal.me"-->
   <input type="hidden" name="_subject" value="New speaker submission">
   <input type="hidden" name="_format" value="plain">
