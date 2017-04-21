@@ -16,8 +16,14 @@ title: index
 </div>
 
 <div class="emphasize">
-
-  {% if site.phase == 1 %}
+  
+  {% if site.phase == 0 %}
+  
+  <h2>
+    Like us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates on the next conference!
+  </h2>
+  
+  {% elsif site.phase == 1 %}
   
   <h2>
     Tickets for 2017 will go on sale in Hilary term, like us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates.
@@ -49,7 +55,11 @@ title: index
 	<p><ul>
       <li>IN[SCI]TE is an interdisciplinary Science, Technology, and Engineering conference based  Oxford University.</li>
       <li>IN[SCI]TE is run by undergrads, and the talks will be both delivered by and aimed at undergrads.</li>
-      <li>Now in its second year IN[SCI]TE will be held on 18th-19th April at Merton College, Oxford.</li>
+      {% if site.phase <= 1 %}
+      <li>IN[SCI]TE has now taken place twice in Oxford and once in Cambridge. Plans for next year will be revealed in the coming months.</li>
+      {% else %}
+      <li>Now moving into its third year, IN[SCI]TE will be held on !INSERT HERE!.</li>
+      {% endif %}
     </ul></p>
   </div>
 		
